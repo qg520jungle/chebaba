@@ -36,8 +36,20 @@
     color: @color_pp;
   }
 }
-.ss{
-  color:@color_pp;
+.u-btn-bg-p{
+  width:140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: 500;
+  border:1px solid;
+  .btn-s (@color_r, @color_pp, @color_p);
+  &:hover {
+    color: @color_r;
+  }
+  &:focus {
+    color: @color_r;
+  }
 }
 //.btn-app {
 //  .btn-s(@color1,@main-c);
