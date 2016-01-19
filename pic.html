@@ -84,12 +84,13 @@
         <dl class="f-cb">
           <dt class="f-fl">
             <i class="u-icon u-icon-sfbl"></i>
+            <img src="./res/img/sfbl.jpg" alt="">
             <span class="s-list-tt">首付比例:</span>
           </dt>
           <dd class="f-fl">
             <ul class="f-cb m-ct-list">
               <li class="u-ct-list"><span class="s-main">20%</span></li>
-              <li class="u-ct-list z-action"><span class="s-main">30%</span></li>
+              <li class="u-ct-list z-active"><span class="s-main">30%</span></li>
               <li class="u-ct-list"><span class="s-main">40%</span></li>
               <li class="u-ct-list"><span class="s-main">50%</span></li>
               <li class="u-ct-list"><span class="s-main">60%</span></li>
@@ -101,13 +102,14 @@
         <dl class="f-cb m-ct-hkqx">
           <dt class="f-fl">
             <i class="u-icon u-icon-hkqx"></i>
+            <img src="./res/img/hkqx.png" alt="">
             <span class="s-list-tt">还款期限:</span>
           </dt>
           <dd class="f-fl ">
             <ul class="f-cb m-ct-list">
               <li class="u-ct-list"><span class="s-main">12期</span></li>
               <li class="u-ct-list"><span class="s-main">24期</span></li>
-              <li class="u-ct-list z-action"><span class="s-main">36期</span></li>
+              <li class="u-ct-list z-active"><span class="s-main">36期</span></li>
               <li class="u-ct-list"><span class="s-main">48期</span></li>
               <li class="u-ct-list"><span class="s-main">60期</span></li>
             </ul>
@@ -126,8 +128,11 @@
         </dl>
         <dl class="f-fl f-ml34">
           <dt>
-            <span class="s-sm">购置税</span>
-            <i class="u-icon u-icon-jb"></i>
+            <span class="s-sm gzs">购置税
+              <i class="u-icon u-icon-jb"></i>
+              <img class="u-icon-jb" src="./res/img/jb.png" alt="">
+            </span>
+
           </dt>
           <dd class="cc">
             <span class="s-point-p">2.50</span>
@@ -154,8 +159,12 @@
       </div>
       <div class="f-fr">
         <a href="" class="s-sm u-sort z-active">默认</a>
-        <a href="" class="s-sm u-sort">按月供价格<i></i></a>
-        <a href="" class="s-sm u-sort">按热门度<i></i></a>
+        <a href="" class="s-sm u-sort">按月供价格
+            <i></i>
+            <img src="./res/img/x.png" alt=""></a>
+        <a href="" class="s-sm u-sort">按热门度
+            <i></i>
+            <img src="./res/img/s.png" alt=""></a>
       </div>
 
     </div>
@@ -226,7 +235,7 @@
         <div class="m-list-apply f-fl">
           <ul>
             <li class="">
-              <a href="" class="u-btn u-btn-bg-p">马上申请</a>
+              <a href="" class="u-btn u-btn-bg-p ">马上申请</a>
             </li>
             <li>
               <ul class="m-list-g f-cb">
@@ -250,7 +259,17 @@
  </div>
 
 
-
+<script>
+  $('.l').on('mouseover',function(){
+    $(this).addClass('z-active')
+  }).on('mouseout',function(){
+    $(this).removeClass('z-active')
+  });
+  $('.u-ct-list').on('click',function(){
+    $(this).parent().children('.u-ct-list').removeClass('z-active');
+    $(this).addClass('z-active');
+  });
+</script>
 </body>
 
 </html>

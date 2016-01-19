@@ -126,8 +126,11 @@ li {
   margin-bottom: 30px;
 }
 .m-ct-list{
-  margin-left: 50px;
-  .z-action{
+//  margin-left: 50px;
+  .u-ct-list{
+    cursor:pointer;
+  }
+  .z-active{
     background-color: @color_p;
     span{
       color: @color_pp;
@@ -139,6 +142,10 @@ li {
 }
 .m-ct-left{
   float: left;
+  img{
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
 }
 .m-ct-right{
   float:right;
@@ -147,6 +154,14 @@ li {
   padding-right: 10px;
   .cc{
     margin-top: 21px;
+  }
+  .gzs{
+    position: relative;
+  }
+  .u-icon-jb{
+    position: absolute;
+    top: -17px;
+    margin-left: -1px;
   }
 }
 .m-tips{
@@ -164,8 +179,12 @@ li {
 .m-list{
   overflow: hidden;
   .l{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:2px solid transparent;
+  }
+  .z-active{
+    border-color: @color_b;
   }
 }
 .m-list-img{
