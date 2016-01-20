@@ -213,7 +213,17 @@
         </div>
         <div class="m-list-finances f-fl">
           <dl  class="f-fl m-list-f">
-            <dt class="s-sm s-bd-da u-list-f">月供（含利息）</dt>
+            <dt class="s-sm s-bd-da u-list-f j-bubble">月供（含利息）
+              <div class="u-bublle">
+                <i class="u-angle"></i>
+                <p>
+                  等额本息计算公式： ［贷款本金 × 月利率 × （ 1 ＋月利率）＾还款月数］ ÷ ［（ 1 ＋月利率）＾还款月数－ 1 ］
+                </p>
+                <p>
+                  等额本金计算公式：每月还款金额 =  （贷款本金 /  还款月数） + （本金 —  已归还本金累计额） × 每月利率
+                </p>
+              </div>
+            </dt>
             <dd>
               <span class="s-point-p">3666</span>
               <span class="s-sm">元</span>
@@ -367,6 +377,11 @@
   $('.u-ct-list').on('click',function(){
     $(this).parent().children('.u-ct-list').removeClass('z-active');
     $(this).addClass('z-active');
+  });
+  $('.j-bubble').on('mouseover',function(){
+
+  }).on('mouseout',function(){
+
   });
 </script>
 </body>

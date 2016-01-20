@@ -51,6 +51,28 @@
     .btn-s (@color_pp, @color_r, @color_r);
   }
 }
+.u-btn-select {
+  width:123px;
+  height: 38px;
+  border:1px solid;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 500;
+  margin-right: 10px;
+  .btn-s (@color0, #f9f9f9, #f9f9f9);
+  &:hover {
+    .btn-s (@color0, #f9f9f9, @color_p);
+  }
+ &:focus {
+    .btn-s (@color0, #f9f9f9, @color_p);
+  }
+}
+.u-btn-main{
+  width:140px;
+}
+.u-btn-lg{
+  width:180px;
+}
 //.btn-app {
 //  .btn-s(@color1,@main-c);
 //}
